@@ -50,3 +50,28 @@ else if(mark >=60){
 else{
     console.log('You got F')
 }
+
+
+// Task 3
+
+var myResult= 91;
+var friendResult= 22;
+
+if(myResult > 80){
+    if(friendResult>80){
+        console.log('chol lunch e jaii')
+    }
+    else if (friendResult < 80 && friendResult >=60){
+        console.log('na re next time')
+    }
+    else if (friendResult < 60 && friendResult >=40){
+        console.log('tor msg e dekbo na')
+    }
+    else  {
+        console.log('block ka')
+    }
+}
+else{
+    console.log('its time for sleep')
+}
+
