@@ -23,3 +23,30 @@ else{
 }
 
 
+
+
+
+
+
+
+
+
+// Task 2
+
+var mark = 95;
+
+if(mark> 90 && mark <= 100 ){
+    console.log('you get A')
+}
+else if(mark >=80){
+    console.log('you get B')
+}
+else if(mark >=70){
+    console.log('you get C')
+}
+else if(mark >=60){
+    console.log('you get D')
+}
+else{
+    console.log('You got F')
+}
