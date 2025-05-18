@@ -29,3 +29,72 @@ for (i = 0; i < products.length; i++) {
 console.log(uniqueProducts)
 
 
+
+// Problem-2:
+// WIth this problem solving we can access(with loop) an array and make another Array which put first array specific objects-property
+
+const products1 = [
+  { name: "laptop", categories: "Electronics", price: 40000 },
+  { name: "T-shirt", categories: "Clothing", price: 250 },
+  { name: "Headphones", categories: "Electronics", price: 150 },
+  { name: "Jeans", categories: "Clothing", price: 400 },
+];
+// To store an array specific objects-property
+let categorizedProduct = {
+  electronics: [],
+  clothing: [],
+};
+// To acces the product array
+for (const product of products1) {
+  
+  // for specific category check
+  if (product.categories === "Electronics") {
+    categorizedProduct.electronics.push(product.categories);
+  } else if (product.categories === "Clothing") {
+    categorizedProduct.clothing.push(product.categories);
+  }
+}
+
+console.log(categorizedProduct);
+
+
+
+// Problem-3: 
+// With this problem we will be able to convert an string into array.and acces it also check it store any Nan and space value. Finally sum the string which is converted into an array
+
+let price = "$249";
+
+// string to array convertion
+let chars = price.split("");
+let sum = 0
+// to access array which is chars.
+for (const element of chars) {
+  
+  // check chars array for checkout is array store any Nan and space value.Is it not store. its condition store sum for this chars array
+  if (!isNaN(element) && element !== " ") {
+    // parseInt for convert string value into integer
+    sum += parseInt(element);
+  }
+}
+console.log(sum)
+
+
+// Problem-4
+// With this problem we will be able to convert an string into array.and acces it and we will reversed this array. And when we reverse it will join each other then we used and loop to give space each word
+
+let description = "Programming Hero is the best platform for skill acheive"
+// string to array convertion
+let words = description.split(" ")
+// console.log(words); it gives the array
+let reverse = "";
+// To (words array) access
+for (i = words.length - 1; i >= 0; i--) {
+  let element = words[i];
+  // description store in reverse way
+  reverse += element;
+  // its gives space after reversed each word
+  if (i > 0) {
+    reverse += " ";
+  }
+}
+console.log(reverse);
