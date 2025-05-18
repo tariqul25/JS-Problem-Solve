@@ -75,3 +75,51 @@ else{
     console.log('its time for sleep')
 }
 
+
+// Task 4
+
+var num1= 70;
+var num2= 55;
+var result;
+
+if (num1 > num2 ){
+    result = num1 * 2;
+   console.log(result); 
+}
+else{
+    result= num1 + num2 ;
+    console.log(result);
+}
+
+
+num1>num2? console.log(result=num1*2)  : console.log(result=num1+num2)
+
+
+num1>num2? result=num1*2 : result=num1+num2
+console.log(result)
+
+
+
+
+// Task 5
+
+var ticketPrice = 800 ;
+var age = 72;
+var isStudent= false;
+
+
+if (age >=60 ){
+    discount = ticketPrice * 15/100;
+    console.log(ticketPrice=ticketPrice-discount)
+}
+else if(isStudent){
+    discount = ticketPrice * 50/100;
+    console.log(ticketPrice=ticketPrice-discount)
+}
+else if(age<10){
+    console.log('ticket is free')
+}
+else{
+    console.log(ticketPrice)
+}
+ 
