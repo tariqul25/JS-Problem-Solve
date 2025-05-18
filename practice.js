@@ -78,23 +78,3 @@ for (const element of chars) {
 }
 console.log(sum)
 
-
-// Problem-4
-// With this problem we will be able to convert an string into array.and acces it and we will reversed this array. And when we reverse it will join each other then we used and loop to give space each word
-
-let description = "Programming Hero is the best platform for skill acheive"
-// string to array convertion
-let words = description.split(" ")
-// console.log(words); it gives the array
-let reverse = "";
-// To (words array) access
-for (i = words.length - 1; i >= 0; i--) {
-  let element = words[i];
-  // description store in reverse way
-  reverse += element;
-  // its gives space after reversed each word
-  if (i > 0) {
-    reverse += " ";
-  }
-}
-console.log(reverse);
